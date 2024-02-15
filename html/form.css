@@ -1,0 +1,93 @@
+html {
+   font-family: Inter, sans-serif;
+}
+.mi-form {
+   top: 379px;
+   left: 200px;
+   width: 1216px;
+   height: 896px;
+   justify-content: center; /* Centrar horizontalmente */
+   align-items: center; /* Centrar verticalmente */
+   display: flex;
+   padding: 20px;
+   border: 1px solid #ccc;
+   margin: 10px;
+   position: absolute;
+   border-radius: 0.8%;
+   flex-direction: column;
+   background-color: #CCFE06;
+}
+
+h1 {
+   display: block;
+   font-size: 2em;
+   font-weight: bold;
+   color: white;
+   text-align: center;
+}
+
+h2 {
+   top: 50px;
+   left: 47px;
+   font-size: 1.5em;
+   position: absolute;
+   font-weight: bold;
+   font-family: Inter, sans-serif;
+}
+
+body {
+   background-color: #121212;
+}
+
+.input {
+   color: darkgrey;
+   padding: 0.5rem 1rem;
+   border-color: darkgrey;
+   border-width: 1px;
+   border-radius: 4px;
+   top: 128px;
+   left: 45px;
+   width: 165px;
+   height: 39px;
+   position: absolute;
+}
+
+.form-container {
+   display: flex;
+   flex-wrap: wrap; /* Para que los elementos se envuelvan si no caben en una sola fila */
+}
+
+.form-nombre1 {
+   top: 98px;
+   left: 48px;
+   font-size: 18px;
+   position: absolute;
+}
+
+.form-nombre2 {
+   top: 128px;
+   left: 45px;
+   width: 165px;
+   height: 39px;
+   position: absolute;
+}
+
+.form-apellidos1 {
+   top: 100px;
+   left: 285px;
+   font-size: 18px;
+   position: absolute;
+}
+
+.form-apellidos2 {
+   top: 127px;
+   left: 284px;
+   width: 184px;
+   height: 41px;
+   position: absolute;
+}
+
+.input-group label {
+   display: block; /* Para que el texto del label esté en una línea separada */
+}
+
