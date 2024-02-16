@@ -20,9 +20,13 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
+    font-size: 2em;
+    margin-top: 1em;
+    font-weight: 700;
 }
 
 .form-container__label {
+    display: block;
     margin-top: 2em;
     margin-bottom: 0.8em;
     margin-left: 4.4em;
@@ -32,7 +36,7 @@ body {
 .form-container__write-box {
     display: block;
     margin: auto;
-    margin-top: 2.5em;
+    margin-top: 2em;
     border: 0px;
     border-bottom: 3px solid black;
     width: 30em;
@@ -53,7 +57,7 @@ body {
     font-weight: 600;
 }
 .form-container__button:hover{
-    cursor: pointer;
+    pointer-events: painted;
 }
 
 .form-container__logo {

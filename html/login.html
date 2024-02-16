@@ -13,15 +13,15 @@
 <body>
     <div class="form-container">
         <form action="/logIn-conection" method="post">
-            <h1 class="form-container__title">
+            <div class="form-container__title">
                 Log in
-                <img src="/img/avispa1.png-removebg-preview.png" alt="" class="form-container__logo">
-            </h1>
-            <div class="form-container__label">Email Address</div>
+                <img src="/img/avispa1.png-removebg-preview.png" alt="logo" class="form-container__logo">
+            </div>
+            <label for="email" class="form-container__label">Email Address</label>
             <input type="email" class="form-container__write-box" name="email" required>
-            <div class="form-container__label">Create password</div>
+            <label for="password" class="form-container__label">Create password</label>
             <input type="password" class="form-container__write-box" name="password" required>
-            <input type="submit" value="Log in" class="form-container__button"><br>
+            <input type="submit" value="Log in" class="form-container__button">
             <div class="form-container__register">
                 Are you not registered? 
                 <a href="/signup" class="form-container__register-link">Register now</a>
