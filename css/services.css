@@ -1,0 +1,14 @@
+.grid{
+    display: flex;   
+    flex-wrap: wrap;
+}
+
+.service_description{
+    color: aqua;
+}
+
+.service_image{
+    width: 200px;
+    border: 2px solid #000;
+    margin: 10px;
+}
