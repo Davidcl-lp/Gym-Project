@@ -1,0 +1,15 @@
+
+.nav-bar{
+    display: flex;   
+    flex-wrap: wrap;
+    align-items: center;
+    border: solid #000;
+    background: linear-gradient(to right,#1be0e7, #a2e6e8);
+}
+.nav-bar_option{
+    margin: 2px;
+    padding: 2px;
+}
+.nav-bar_option--active:hover{
+    transform: scale(1.2);
+}
