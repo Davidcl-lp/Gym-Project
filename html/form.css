@@ -1,29 +1,26 @@
-html {
-   font-family: Inter, sans-serif;
-}
 .mi-form {
-   top: 379px;
-   left: 200px;
-   width: 1216px;
-   height: 896px;
+   width: 450px;
+   height: 500px;
    justify-content: center; /* Centrar horizontalmente */
    align-items: center; /* Centrar verticalmente */
    display: flex;
-   padding: 20px;
+   padding: 48px;
    border: 1px solid #ccc;
-   margin: 10px;
    position: absolute;
    border-radius: 0.8%;
    flex-direction: column;
-   background-color: #CCFE06;
+   background: white;
+   top: 200px;
 }
 
 h1 {
-   display: block;
-   font-size: 2em;
-   font-weight: bold;
-   color: white;
    text-align: center;
+   font-style: normal;
+   line-height: 56px;
+   color: white;
+   font-size: 40px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
 }
 
 h2 {
@@ -32,11 +29,29 @@ h2 {
    font-size: 1.5em;
    position: absolute;
    font-weight: bold;
-   font-family: Inter, sans-serif;
+   font-family: 'Poppins', sans-serif;
+}
+
+html,body {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+}
+
+html{
+   height: 100vh;
+   width: 100vw;
 }
 
 body {
-   background-color: #121212;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background: #262626;
+   font-family: 'Poppins', sans-serif;
 }
 
 .input {
