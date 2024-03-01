@@ -2,9 +2,51 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Reservar</title>
+    <title>Reservar Clase</title>
+    <link rel="stylesheet" href="bookings.css">
+    <script>
+        window.onload = function() {
+            // Obtener el parámetro "clase" de la URL
+            var urlParams = new URLSearchParams(window.location.search);
+            var clase = urlParams.get('clase');
+            if (clase) {
+                // Seleccionar automáticamente el botón correspondiente
+                var botonClase = document.querySelector('button[data-clase="' + clase + '"]');
+                if (botonClase) {
+                    reservarClase(clase); // Llamar a la función para resaltar el botón
+                }
+            }
+        }
+
+        function reservarClase(clase) {
+            // Restablecer el color de fondo de todos los botones
+            var botones = document.querySelectorAll('button');
+            botones.forEach(function(boton) {
+                boton.style.backgroundColor = '#f9f9f9';
+            });
+            // Cambiar el color de fondo del botón seleccionado
+            var botonSeleccionado = document.querySelector('button[data-clase="' + clase + '"]');
+            if (botonSeleccionado) {
+                botonSeleccionado.style.backgroundColor = '#007bff';
+            }
+            document.getElementById('clase').value = clase;
+        }
+    </script>
 </head>
 <body>
-<h1> RESERVAS</h1>
+<h2>Reservar Clase</h2>
+<form action="procesar_reserva.php" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required>
+    <input type="hidden" id="clase" name="clase">
+    <input type="submit" value="Reservar Clase">
+</form>
+<p>Selecciona una clase:</p>
+<button onclick="reservarClase('Yoga')" data-clase="Yoga">Yoga</button>
+<button onclick="reservarClase('Pilates')" data-clase="Pilates">Pilates</button>
+<button onclick="reservarClase('Spinning')" data-clase="Spinning">Spinning</button>
+<!-- Añade más botones para otras clases si es necesario -->
 </body>
 </html>
