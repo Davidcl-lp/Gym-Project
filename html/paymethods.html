@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/paymethods.css">
     <title>Métodos de pago</title>
 </head>
 <body>
@@ -15,42 +16,38 @@
     </header>
     <main>    
         <form action="" method="post">    
-            <h1>Seleccionar método de pago:</h1>
-            <section>
+            <section class="methods">
+                <h1 class="methods_title">Seleccionar método de pago:</h1>
                 <p>
-                    <label for="método 1">Método de pago 1</label>
-                    <input type="radio" name="métodos de pago" id="método 1" required>
+                    <label class="methods_label" for="método 1">Método de pago 1</label>
+                    <input class="methods_option methods_option--active" type="radio" name="métodos de pago" id="método 1" required>
                 </p>
                 <p>
-                    <label for="método 2">Método de pago 2</label>
-                    <input type="radio" name="métodos de pago" id="método 2">
+                    <label class="methods_label" for="método 2">Método de pago 2</label>
+                    <input class="methods_option methods_option--active" type="radio" name="métodos de pago" id="método 2">
                 </p>
                 <p>
-                    <label for="método 3">Método de pago 3</label>
-                    <input type="radio" name="métodos de pago" id="método 3">
+                    <label class ="methods_label" for="método 3">Método de pago 3</label>
+                    <input class="methods_option methods_option--active" type="radio" name="métodos de pago" id="método 3">
                 </p>
-            </section>
             
-            <h1>Rellenar datos:</h1>
-                <section>
+                <h1 class="methods_title">Rellenar datos:</h1>
                     <p>
-                        <label for="campo 1">Campo 1</label>
-                        <input type="text"  id="campo 1" required>
-                        <label for="campo 2">Campo 2</label>
-                        <input type="text"  id="campo 2" required>
+                        <label class ="methods_label" for="campo 1">Campo 1</label>
+                        <input class="methods_input" type="text"  id="campo 1" required>
+                        <label class ="methods_label" for="campo 2">Campo 2</label>
+                        <input class="methods_input" type="text"  id="campo 2" required>
                     </p>
                     <p>
-                        <label for="campo 3">Campo 3</label>
-                        <input type="text" id="campo 3" required>
+                        <label class ="methods_label" for="campo 3">Campo 3</label>
+                        <input class="methods_input" type="text" id="campo 3" required>
                     </p>
                     <p>
-                        <label for="campo 4">Campo 4</label>
-                        <input type="text"  id="campo 4" required>
-                    </p>
-                </section>
-                <section>
+                        <label class ="methods_label" for="campo 4">Campo 4</label>
+                        <input class="methods_input" type="text"  id="campo 4" required>
+                    </p>                
                     <p>
-                        <button>Guardar</button>
+                        <button class="methods_button methods_button--active">Guardar</button>
                     </p>
                 </section>
         </form>
