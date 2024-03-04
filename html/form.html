@@ -10,34 +10,30 @@
         <h1> Resumen de registro </h1>
     </div>
     <div class="mi-form">
-        <form action="#" method="get">
+        <!--<form action="#" method="get">-->
             <h2> Datos personales </h2>
             <div class="form-container">
-                <span class="form-nombre1">
+                <div class="form-nombre">
                     <label for="nombre"> Nombre*</label>
-                </span>
-                <span class="form-nombre2">
                     <input type="text" id="nombre" required placeholder="Ingrese su nombre">
-                </span>
-                <span class="form-apellidos1">
+                </div>
+                <div class="form-apellidos">
                     <label for="apellidos"> Apellidos*</label>
-                </span>
-                <span class="form-apellidos2">
                     <input type="text" id="apellidos" required placeholder="Ingrese sus apellidos">
-                </span>
+                </div>
+
             </div>
 
             <p>
                 <label for="dni"> DNI*</label>
                 <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Za-z]" title="Introduzca un DNI válido" required>
             </p>
-            <fieldset>
                 <legend> Género </legend>
                 <input type="radio" id="hombre" name="genero" value="hombre">
                 <label for="hombre"> Hombre </label>
                 <input type="radio" id="mujer" name="genero" value="mujer">
                 <label for="mujer"> Mujer </label>
-            </fieldset>
+
             <p>
                 <label for="nacimiento"> Fecha de nacimiento*</label>
                 <input type="date" id="nacimiento" required>
@@ -55,7 +51,7 @@
                 <label for="direccion"> Dirección del domicilio</label>
                 <input type="text" id="direccion">
             </p>
-        </form>
+        <!-- </form> -->
     </div>
 </body>
 </html>

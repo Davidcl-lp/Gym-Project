@@ -5,18 +5,41 @@ body {
     background-color: #262626;
 }
 
+.contenedor {
+    display: flex; /* Establecer el contenedor como un flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
 h2 {
     text-align: center;
     color: white;
     margin-top: 20px;
 }
 
-form {
-    width: 300px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.form {
+    border: 1px solid #FFC000;
+    background: #FFC000;
+}
+.form, .horario {
+    display: flex;
+    padding: 1% 1%;
+    width: 20%;
+    margin: 5px; /* Ajusta el margen entre los divs según lo desees */
+    border-radius: 16px;
+    flex-direction: column;
+}
+
+.horario {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    align-items: center;
 }
 
 label {
@@ -27,50 +50,34 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="submit"] {
-    width: calc(100% - 20px);
     padding: 10px;
-    margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
 input[type="submit"] {
-    background-color: #007bff;
+    background-color: black;
     color: #fff;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #FFC000;
 }
 
 button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
+    text-align: center;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #e6e6e6;
-}
-/* Añade estos estilos al final del archivo CSS */
-
-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    border: 1px solid #FFC000;
+    line-height: 36px;
+    background: white;
+    color: black;
+    width: 235px;
+    height: 66px;
 }
 
 button:hover {
@@ -78,6 +85,6 @@ button:hover {
 }
 
 button[selected] {
-    background-color: #007bff !important;
+    background-color: black !important;
     color: #fff;
 }

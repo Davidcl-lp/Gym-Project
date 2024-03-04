@@ -1,16 +1,20 @@
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+}
+
 .mi-form {
-   width: 450px;
-   height: 500px;
    justify-content: center; /* Centrar horizontalmente */
-   align-items: center; /* Centrar verticalmente */
+   align-items: flex-start; /* Centrar verticalmente */
    display: flex;
-   padding: 48px;
-   border: 1px solid #ccc;
-   position: absolute;
-   border-radius: 0.8%;
+   margin: 10%;
+   padding: 2% 2%;
+   padding-right: 4%;
+   border: 1px solid #FFC000;
+   border-radius: 16px;
    flex-direction: column;
-   background: white;
-   top: 200px;
+   background: #FFC000;
 }
 
 h1 {
@@ -24,29 +28,13 @@ h1 {
 }
 
 h2 {
-   top: 50px;
-   left: 47px;
    font-size: 1.5em;
-   position: absolute;
    font-weight: bold;
    font-family: 'Poppins', sans-serif;
-}
-
-html,body {
-   margin: 0;
-   padding: 0;
-   width: 100%;
-   height: 100%;
-}
-
-html{
-   height: 100vh;
-   width: 100vw;
+   align-items: flex-start;
 }
 
 body {
-   width: 100%;
-   height: 100%;
    display: flex;
    align-items: center;
    flex-direction: column;
@@ -54,55 +42,51 @@ body {
    font-family: 'Poppins', sans-serif;
 }
 
-.input {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
    color: darkgrey;
-   padding: 0.5rem 1rem;
-   border-color: darkgrey;
+   border-color: black;
    border-width: 1px;
    border-radius: 4px;
-   top: 128px;
-   left: 45px;
-   width: 165px;
    height: 39px;
-   position: absolute;
+   width: 165px;
 }
 
 .form-container {
    display: flex;
-   flex-wrap: wrap; /* Para que los elementos se envuelvan si no caben en una sola fila */
 }
 
-.form-nombre1 {
-   top: 98px;
-   left: 48px;
-   font-size: 18px;
-   position: absolute;
+.form-nombre {
+   display: flex;
+   flex-direction: column;
+   margin: 1%;
+   padding: 1%;
 }
 
-.form-nombre2 {
-   top: 128px;
-   left: 45px;
-   width: 165px;
-   height: 39px;
-   position: absolute;
+.form-nombre label {
+   display: block;
+   margin-bottom: 5px; /* Espacio entre la etiqueta y el input */
 }
 
-.form-apellidos1 {
-   top: 100px;
-   left: 285px;
-   font-size: 18px;
-   position: absolute;
+.form-nombre input {
+   display: block;
 }
 
-.form-apellidos2 {
-   top: 127px;
-   left: 284px;
-   width: 184px;
-   height: 41px;
-   position: absolute;
+
+.form-apellidos {
+   display: flex;
+   flex-direction: column;
+   margin: 1%;
+   padding: 1%;
 }
 
-.input-group label {
-   display: block; /* Para que el texto del label esté en una línea separada */
+.form-apellidos label {
+   display: block;
+   margin-bottom: 5px; /* Espacio entre la etiqueta y el input */
 }
 
+.form-apellidos input {
+   display: block;
+}

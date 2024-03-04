@@ -20,7 +20,7 @@ function reservarClase(clase) {
     // Cambiar el color de fondo del botón seleccionado
     var botonSeleccionado = document.querySelector('button[data-clase="' + clase + '"]');
     if (botonSeleccionado) {
-        botonSeleccionado.style.backgroundColor = '#007bff';
+        botonSeleccionado.style.backgroundColor = '#ffc000';
     }
     document.getElementById('clase').value = clase;
 }
