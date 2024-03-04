@@ -1,73 +1,119 @@
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
-    background-color: #262626;
+    text-decoration: none;
 }
 
-h2 {
-    text-align: center;
-    color: #333;
-    margin-top: 20px;
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1f22;
 }
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 300%;
+    margin-top: 5%;
+}
+
+.Spinning:hover, .GAP:hover, .Zumba:hover, .Boxeo:hover, .Bodypump:hover, .Core:hover, .Pilates:hover, .Yoga:hover {
+    transition: all .2s ease-out;
+    transform: scale(0.90);
+    border-radius: 16px;
+    cursor: pointer;
+}
+
 
 table {
-    width: 100%;
+    margin: 0 auto; /* Centrar la tabla horizontalmente */
     border-collapse: collapse;
-    margin: 20px auto;
-    position: relative;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #1e1f22;
+    width: 95%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color: white;
 }
 
 th, td {
-    border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
     position: relative;
 }
 
+td {
+    border: 5px solid white;
+    font-size: 150%;
+}
+
 th {
-    background-color: #f2f2f2;
+    background-color: #1e1f22;
+    font-size: 150%;
 }
 
 tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #1e1f22;
 }
 
 a {
-    color: #007bff;
-    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 110%;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3;
+    color: white;
 }
 
-/* Añade estos estilos al final de tu CSS */
 
-/* Estilos para todas las clases de Yoga */
-td a[href*="Yoga"] {
-    background-color: violet; /* Morado */
-    color: #fff; /* Texto en blanco para contrastar */
+.Yoga {
+    background-color: blueviolet;
+    color: #fff;
 }
 
+.Boxeo {
+    background-color: #97d99eff;
+    color: #fff;
+}
+
+.Spinning {
+    background-color: #57bf33ff;
+    color: #fff;
+}
+
+.Bodypump {
+    background-color: #f36b35ff;
+    color: #fff;
+}
+
+.GAP {
+    background-color: hotpink;
+    color: #fff;
+}
+
+.Core {
+    background-color: #f03a4fff;
+    color: #fff;
+}
+
+.Pilates {
+    background-color: #78d1deff;
+    color: #fff;
+}
+
+.Zumba {
+    background-color: #f8a628ff;
+    color: #fff;
+}
 
 .trainer {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
     font-weight: bold;
-    color: #666;
-    font-size: 12px;
+    color: white;
+    font-size: 18px;
 }
 
 td a {
     display: block;
-}
-
-td a:hover {
-    text-decoration: underline;
 }
