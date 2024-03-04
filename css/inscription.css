@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.pricing-plans {
+    margin: 3% 7%;
+    display: grid;
+    border-radius: 16px;
+    background-color: #f0f0f0;
+    grid-template-columns: auto auto;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.plan{
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #DBDBDB; /* Línea divisoria vertical */
+}
+
+.plan #familiar {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #DBDBDB;
+
+}
+
+.standard, .plus, .familiar, .perso{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 2%;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#text4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.cost {
+    display: inline-block;
+    margin: 11%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#cost2 {
+    margin: 3%;
+}
+.coste {
+    font-weight: bold;
+    font-size: 40px;
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6%;
+}
+
+li {
+    padding: 3%;
+    margin: 2%;
+}
+
+p {
+    color: #FFC000;
+    font-weight: bold;
+    padding-top: 2%;
+    margin-bottom: -14%;
+}
+
+.button {
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border: 1px solid #FFC000;
+    line-height: 36px;
+    background: #FFC000;
+    color: #f0f0f0;
+    width: 235px;
+    height: 66px;
+}
+
+#button1 {
+    margin-top: 25%;
+}
+
+#button2 {
+    margin-top: 35%;
+}
+
+.button2 {
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    line-height: 36px;
+    width: 235px;
+    height: 66px;
+    margin-top: 75%;
+    border: 1px solid black;
+    background: black;
+    color: #ffffff;
+}
+
+.button:hover {
+    background: #f0f0f0;
+    color: #FFC000;
+
+}
+
+.button2:hover {
+    background: #f0f0f0;
+    color: black;
+}
+.checklist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 27%;
+}
+
+.plan2 {
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background: radial-gradient(circle at left top, #181504 0.00%, #FFC000 53.0%,#ffd500, #fbdc30, #ffe761);
+    position: relative;
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1e1f22;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-style: normal;
+    line-height: 56px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 5%;
+}
