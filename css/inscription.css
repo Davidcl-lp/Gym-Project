@@ -12,6 +12,7 @@
     grid-template-columns: auto auto;
     font-family: 'Poppins', sans-serif;
     position: relative;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
 }
 
 .plan{
@@ -86,19 +87,39 @@ p {
     margin-bottom: -14%;
 }
 
-.button {
+.boton {
     text-align: center;
     border-radius: 5px;
     font-weight: bold;
     text-transform: uppercase;
     transition: all 0.3s ease 0s;
     cursor: pointer;
-    border: 1px solid #FFC000;
     line-height: 36px;
-    background: #FFC000;
-    color: #f0f0f0;
     width: 235px;
     height: 66px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.b1 {
+    border: none;
+    background: #FFC000;
+    color: #f0f0f0;
+}
+
+.b2 {
+    background: black;
+    border: none;
+    color: #f0f0f0;
+}
+
+.b1:hover {
+    background: darkorange;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+
+}
+
+.b2:hover {
+    background: #262626;
 }
 
 #button1 {
@@ -109,32 +130,6 @@ p {
     margin-top: 35%;
 }
 
-.button2 {
-    text-align: center;
-    border-radius: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    line-height: 36px;
-    width: 235px;
-    height: 66px;
-    margin-top: 75%;
-    border: 1px solid black;
-    background: black;
-    color: #ffffff;
-}
-
-.button:hover {
-    background: #f0f0f0;
-    color: #FFC000;
-
-}
-
-.button2:hover {
-    background: #f0f0f0;
-    color: black;
-}
 .checklist {
     display: flex;
     flex-direction: column;

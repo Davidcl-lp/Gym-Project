@@ -15,7 +15,19 @@
    border-radius: 16px;
    flex-direction: column;
    background: #FFC000;
+   box-shadow: 0 15px 25px rgba(0,0,0,.6);
 }
+
+.form-row {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.form-row .form-elements {
+   width: calc(50% - 1%);
+}
+
 
 h1 {
    text-align: center;
@@ -42,51 +54,24 @@ body {
    font-family: 'Poppins', sans-serif;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"] {
-   color: darkgrey;
-   border-color: black;
-   border-width: 1px;
-   border-radius: 4px;
-   height: 39px;
-   width: 165px;
+.form-container .form-elements input {
+   width: 100%;
+   padding: 10px 0;
+   font-size: 16px;
+   color: #fff;
+   margin-bottom: 30px;
+   border: none;
+   border-bottom: 1px solid #fff;
+   outline: none;
+   background: transparent;
 }
 
-.form-container {
-   display: flex;
+.form-container .form-elements label {
+   display: inline-block;
+   padding: 10px 0;
+   font-size: 16px;
+   color: #fff;
+   pointer-events: none;
+   transition: .5s;
 }
 
-.form-nombre {
-   display: flex;
-   flex-direction: column;
-   margin: 1%;
-   padding: 1%;
-}
-
-.form-nombre label {
-   display: block;
-   margin-bottom: 5px; /* Espacio entre la etiqueta y el input */
-}
-
-.form-nombre input {
-   display: block;
-}
-
-
-.form-apellidos {
-   display: flex;
-   flex-direction: column;
-   margin: 1%;
-   padding: 1%;
-}
-
-.form-apellidos label {
-   display: block;
-   margin-bottom: 5px; /* Espacio entre la etiqueta y el input */
-}
-
-.form-apellidos input {
-   display: block;
-}
