@@ -1,25 +1,47 @@
-html{
-    background: black
-}
-body{
-    width: 100vw;
+body {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    font-family: "Inter";
+    margin: 0;
 }
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+main{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.eventSection {
+    display: flex;
+    flex-direction: column;
     width: 80%;
     gap: 1em;
 }
-.gridElement{
-    border: solid 1px black;
+
+.event__article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.eventImg{
+
+.event__image {
     max-height: 15em;
+    width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    object-fit: cover; /* Mantiene la relación de aspecto */
 }
-.eventText{
-    color: white;
+
+.event__title, .event__text {
+    font-family: 'Inter', sans-serif;
+}
+
+.event__title {
+    font-weight: 700; /* Más enfático para títulos */
+}
+
+.event__text {
     font-weight: 600;
-    font-family: "Inter";
+}
+.description{
+    padding: 1em;
 }

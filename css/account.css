@@ -1,0 +1,45 @@
+html{
+    font-family: "Inter";
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter";
+    margin: 0;
+}
+main{
+    width: 80%;
+}
+.accountLabel, .accountInput{
+    margin-top: 2em;
+    font-weight: bold;
+}
+.accountInput{
+    border: 0px;
+}
+#accountTitle{
+    font-weight: bold;
+}
+.buttons{
+    margin-top: 5em;
+    font-weight: bold;
+    padding: 1em;
+    background-color: white;
+    border: 1px solid black;
+}
+.buttons:hover{
+    background-color: black;
+    color:white;
+    cursor:pointer;
+}
+#editButton{
+    margin-right: 2em;
+}
+li{
+    background-color: yellow;
+    color: white;
+}
+
