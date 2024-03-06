@@ -6,56 +6,72 @@
     <link rel="stylesheet" type="text/css" href="../css/form.css">
 </head>
 <body>
-    <div>
-        <h1> Resumen de registro </h1>
-    </div>
-    <div class="mi-form">
-        <!--<form action="#" method="get">-->
-        <h2> Datos personales </h2>
-        <div class="form-container">
-            <div class="form-row">
-                <div class="form-elements">
-                    <label for="nombre"> Nombre*</label>
-                    <input type="text" id="nombre" required placeholder="Ingrese su nombre">
-                </div>
-                <div class="form-elements">
-                    <label for="apellidos"> Apellidos*</label>
-                    <input type="text" id="apellidos" required placeholder="Ingrese sus apellidos">
-                </div>
-                 <div class="form-elements">
-                    <label for="dni"> DNI*</label>
-                    <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Za-z]" title="DNI Válido" required placeholder="Ingrese un DNI válido">
-                </div>
-                <legend> Género </legend>
-                <div class="form-elements">
-                <input type="radio" id="hombre" name="genero" value="hombre">
-                <label for="hombre"> Hombre </label>
-                <input type="radio" id="mujer" name="genero" value="mujer">
-                <label for="mujer"> Mujer </label>
-                </div>
-
-                <div class="form-elements">
+<div>
+    <h1> Resumen de registro </h1>
+</div>
+<div class="mi-form">
+    <!--<form action="#" method="get">-->
+    <div class="form-container">
+        <div class="form-row">
+            <div class="form-elements">
+                <label for="nombre"> Nombre*</label>
+                <input type="text" id="nombre" required placeholder="Ingrese su nombre">
+            </div>
+            <div class="form-elements">
+                <label for="apellidos"> Apellidos*</label>
+                <input type="text" id="apellidos" required placeholder="Ingrese sus apellidos">
+            </div>
+            <div class="form-elements">
+                <label for="dni"> DNI*</label>
+                <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Za-z]" title="DNI Válido" required placeholder="Ingrese un DNI válido">
+            </div>
+            <div class="form-elements">
                 <label for="nacimiento"> Fecha de nacimiento*</label>
                 <input type="date" id="nacimiento" required>
-                </div>
-
-                <div class="form-elements">
-                <label for="email"> Email*</label>
-                <input type="email" id="email"required placeholder="Ingrese su email">
-                </div>
-
-                <div class="form-elements">
-                <label for="telefono"> Número de teléfono*</label>
-                <input type="tel" id="telefono" required placeholder="Ingrese su número de teléfono">
-                </div>
-
-                <div class="form-elements">
-                <label for="direccion"> Dirección del domicilio</label>
-                <input type="text" id="direccion" placeholder="Ingrese su dirección">
+            </div>
+            <div class="form-elements">
+                <div class="gender-radio">
+                    <legend for="genero"> Género*</legend>
+                    <div class="genero-div">
+                        <div class="male">
+                        <label for="hombre"> Hombre </label>
+                        <input type="radio" id="hombre" name="genero" value="hombre">
+                        </div>
+                        <div class="female">
+                        <label for="mujer"> Mujer </label>
+                        <input type="radio" id="mujer" name="genero" value="mujer">
+                    </div>
+                    </div>
                 </div>
             </div>
+            <div class="form-elements">
+                <label for="email"> Email*</label>
+                <input type="email" id="email"required placeholder="Ingrese su email">
+            </div>
+            <div class="form-elements">
+                <label for="telefono"> Número de teléfono*</label>
+                <input type="tel" id="telefono" required placeholder="Ingrese su número de teléfono">
+            </div>
+            <div class="form-elements">
+                <label for="direccion"> Dirección del domicilio</label>
+                <input type="text" id="direccion" placeholder="Ingrese su dirección">
+            </div>
+            <div class="form-elements">
+                <label for="contraseña"> Contraseña* </label>
+                <input type="password" id="contraseña" placeholder="Escriba una contraseña" required />
+            </div>
+            <div class="form-elements">
+                <label for="re-contraseña"> Repita la contraseña*</label>
+                <input type="password" id="re-contraseña" placeholder="Reescriba la contraseña" required />
+            </div>
+        </div>
+        <div class="button1">
+            <form action="footer.html">
+                <button class="boton" type="submit">  Siguiente </button>
+            </form>
         </div>
     </div>
-        <!-- </form> -->
+</div>
+<!-- </form> -->
 </body>
 </html>
