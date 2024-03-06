@@ -1,11 +1,17 @@
-body{
-    background: linear-gradient(to bottom,#1be0e7, #a2e6e8);
-    height: 100vh;
+html{
+    font-family: "Inter",serif;
 }
 
-header{
-    
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter";
+    margin: 0
 }
+
 .grid{
     display: flex;   
     flex-wrap: wrap;
