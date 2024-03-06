@@ -11,13 +11,6 @@ body {
     background-color: #1e1f22;
 }
 
-h1 {
-    text-align: center;
-    color: white;
-    font-size: 300%;
-    margin-top: 5%;
-}
-
 .Spinning:hover, .GAP:hover, .Zumba:hover, .Boxeo:hover, .Bodypump:hover, .Core:hover, .Pilates:hover, .Yoga:hover {
     transition: all .2s ease-out;
     transform: scale(0.90);
@@ -25,31 +18,32 @@ h1 {
     cursor: pointer;
 }
 
+.Spinning, .GAP, .Zumba, .Boxeo, .Bodypump, .Core, .Pilates, .Yoga{
+    padding: 5px;
+}
+
+td.hora{
+    width: 10%;
+}
+
 
 table {
-    margin: 0 auto; /* Centrar la tabla horizontalmente */
+    margin: 1.5% auto;
     border-collapse: collapse;
     background-color: #1e1f22;
-    width: 95%;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    width: 97%;
     color: white;
 }
 
 th, td {
-    padding: 10px;
     text-align: center;
-    position: relative;
-}
-
-td {
     border: 5px solid white;
-    font-size: 150%;
+    font-size: 20px;
 }
 
 th {
     background-color: #1e1f22;
-    font-size: 150%;
+    padding: 5px;
 }
 
 tr:nth-child(even) {
@@ -59,7 +53,7 @@ tr:nth-child(even) {
 a {
     color: black;
     font-weight: bold;
-    font-size: 110%;
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
@@ -111,9 +105,5 @@ a:hover {
 .trainer {
     font-weight: bold;
     color: white;
-    font-size: 18px;
-}
-
-td a {
-    display: block;
+    font-size: 14px;
 }
