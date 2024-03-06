@@ -15,12 +15,13 @@ function reservarClase(clase) {
     // Restablecer el color de fondo de todos los botones
     var botones = document.querySelectorAll('button');
     botones.forEach(function(boton) {
-        boton.style.backgroundColor = '#f9f9f9';
+        boton.style.backgroundColor = '#ffc000';
     });
     // Cambiar el color de fondo del botón seleccionado
     var botonSeleccionado = document.querySelector('button[data-clase="' + clase + '"]');
     if (botonSeleccionado) {
-        botonSeleccionado.style.backgroundColor = '#ffc000';
+        botonSeleccionado.style.backgroundColor = '#ff8c00';
     }
     document.getElementById('clase').value = clase;
 }
+
