@@ -8,13 +8,13 @@
    justify-content: center; /* Centrar horizontalmente */
    align-items: flex-start; /* Centrar verticalmente */
    display: flex;
-   margin: 6%;
+   margin: 4%;
    padding: 2% 2%;
    padding-right: 4%;
-   border: 1px solid #f0f0f0;
+   border: 1px solid #1e1f22;
    border-radius: 16px;
    flex-direction: column;
-   background: #f0f0f0;
+   background: #1e1f22;
    box-shadow: 0 15px 25px rgba(0,0,0,.6);
 }
 
@@ -31,7 +31,7 @@
 h1 {
    text-align: center;
    line-height: 56px;
-   color: white;
+   color: black;
    font-size: 40px;
    font-family: 'Poppins', sans-serif;
    font-weight: bold;
@@ -55,7 +55,7 @@ body {
    display: flex;
    align-items: center;
    flex-direction: column;
-   background: #1e1f22;
+   background: #f0f0f0;
    font-family: 'Poppins', sans-serif;
 }
 
@@ -64,7 +64,7 @@ legend {
    padding: 10px 0;
    font-size: 16px;
    font-weight: bold;
-   color: black;
+   color: white;
    pointer-events: none;
    transition: .5s;
 }
@@ -73,10 +73,10 @@ legend {
    width: 100%;
    padding: 10px 0;
    font-size: 16px;
-   color: black;
+   color: white;
    margin-bottom: 30px;
    border: none;
-   border-bottom: 0.2em solid black;
+   border-bottom: 0.2em solid white;
    outline: none;
    background: transparent;
 }
@@ -86,7 +86,7 @@ legend {
    padding: 10px 0;
    font-size: 16px;
    font-weight: bold;
-   color: black;
+   color: white;
    pointer-events: none;
    transition: .5s;
 }
@@ -139,4 +139,8 @@ button {
    background: darkorange;
    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
 
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+   filter: invert(100%); /* Invierte el color del icono */
 }
