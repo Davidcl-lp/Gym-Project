@@ -1,15 +1,30 @@
 
 .nav-bar{
     display: flex;   
-    flex-wrap: wrap;
     align-items: center;
     border: solid #000;
-    background: linear-gradient(to right,#1be0e7, #a2e6e8);
+    background: rgb(54, 54, 54);
 }
 .nav-bar_option{
     margin: 2px;
     padding: 2px;
 }
 .nav-bar_option--active:hover{
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
+
+a{
+    text-decoration: none;   
+    font-weight: bold;
+    padding: 0.4em;
+    color:white;
+}
+
+#login, #register{
+    display: inline-block;
+}
+#aside-buttons{
+    margin-left: 35%;
+    display: inline-block;    
+}
+
