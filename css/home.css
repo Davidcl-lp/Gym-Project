@@ -127,7 +127,7 @@ body {
 .slider ul {
     display: flex;
     padding: 0;
-    width: 400%;
+    width: 300%;
 
     animation: slide 20s infinite alternate ease-in-out;
 }
