@@ -3,9 +3,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: black;
+    background-color: linear-gradient(to left top, rgb(212, 194, 3), black);
     font-family: "Inter";
-    background: black
 }
 
 .form-container {
@@ -68,6 +67,7 @@ body {
 
 .form-container__register {
     display: block;
+    margin-top: 0.5em;
     text-align: center;
     font-weight: 600;
 }
@@ -80,48 +80,3 @@ body {
 .form-container__write-box:focus {
     outline: none; 
 }
-.rallas{
-    position: absolute;
-    width: 2em;
-    height: 90em;
-    background-color: #FFD700;
-    transform: rotate(45deg);
-
-}
-#ralla1{
-    z-index: -1;
-    top: -15em;
-    right: 100em;
-}
-#ralla2{
-    z-index: -1;
-    top: -15em;
-    right: 70em;
-}
-#ralla3{
-    z-index: -1;
-    top: -15em;
-    right: 40em;
-}
-#ralla4{
-    z-index: -1;
-    top: -15em;
-    right: 10em;
-}
-
-
-#fly {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
-    border-radius: 50%;
-    z-index: -1;
-  }
-
-  #fly img {
-    height: 5em;
-    width: 5em;
-    z-index: -1;
-  }
-  

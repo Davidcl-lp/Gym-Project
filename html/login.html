@@ -1,38 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="icon" href="/public/images/active-recall-logo.ico" type="image/x-icon">
+    <title>Inscription</title>
     <link rel="stylesheet" href="/css/login.css">
+    <script src="/javascript/login.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <script src="/javascript/login.js"></script>
 </head>
 <body>
-    <div class="form-container">
-        <form action="/logIn-conection" method="post">
+    <main class="form-container">
+        <form action="/logIn" method="post">
             <div class="form-container__title">
                 Log in
                 <img src="/img/avispa1.png-removebg-preview.png" alt="logo" class="form-container__logo">
             </div>
-            <label for="email" class="form-container__label">Email Address</label>
+            <label for="email" class="form-container__label">Dirección de email</label>
             <input type="email" class="form-container__write-box" name="email" required>
-            <label for="password" class="form-container__label">Create password</label>
+            <label for="password" class="form-container__label">Crear contraseña</label>
             <input type="password" class="form-container__write-box" name="password" required>
-            <input type="submit" value="Log in" class="form-container__button">
+            <input type="submit" value="Iniciar sesión" class="form-container__button">
             <div class="form-container__register">
-                Are you not registered? 
-                <a href="/signup" class="form-container__register-link">Register now</a>
+                ¿No estás inscrito? 
+                <a href="/signup" class="form-container__register-link">Inscribete ahora</a>
             </div>
         </form>
-    <div id="fly"><img src="/img/avispa1.png-removebg-preview.png" alt=""></div>
-    <div id="ralla1" class="rallas"></div>
-    <div id="ralla2" class="rallas"></div>
-    <div id="ralla3" class="rallas"></div>
-    <div id="ralla4" class="rallas"></div>
-    </div>   
+    </main>   
 </body>
 </html>

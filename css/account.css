@@ -19,6 +19,7 @@ main{
 }
 .accountInput{
     border: 0px;
+    width: 7em;
 }
 #accountTitle{
     font-weight: bold;
@@ -38,8 +39,19 @@ main{
 #editButton{
     margin-right: 2em;
 }
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 li{
-    background-color: yellow;
-    color: white;
+    display: inline-block;
+}
+li:hover{
+    background-color: #FFD700;
+    color: black;
+    border-radius: 1px;
+    padding: 1px;
+    cursor: pointer;
 }
 
