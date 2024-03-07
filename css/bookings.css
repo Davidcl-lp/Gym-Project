@@ -8,7 +8,7 @@ body {
 .contenedor {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinear los elementos al principio */
+    align-items: flex-start;
 }
 
 .form {
@@ -25,7 +25,7 @@ body {
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator {
-    filter: invert(100%); /* Invierte el color del icono */
+    filter: invert(100%);
 }
 
 label {
@@ -67,9 +67,9 @@ input[type="submit"]:hover {
 
 .botones {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas con el mismo ancho */
-    grid-gap: 10px; /* Espacio entre columnas */
-    margin-bottom: 20px; /* Espacio entre las filas de botones */
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
 }
 
 button {

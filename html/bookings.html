@@ -11,32 +11,31 @@
     <nav>
         <object type="text/html" data="header.html" width="100%"></object>
     </nav>
-
 </header>
 <main>
-<!--<form action="#" method="get">-->
 <div class="contenedor">
     <div class="form">
-        <h1>Selecciona una clase:</h1>
-        <div class="botones">
-            <button onclick="reservarClase('Yoga')" data-clase="Yoga">Yoga</button>
-            <button onclick="reservarClase('Pilates')" data-clase="Pilates">Pilates</button>
-            <button onclick="reservarClase('Spinning')" data-clase="Spinning">Spinning</button>
-            <button onclick="reservarClase('Zumba')" data-clase="Zumba">Zumba</button>
-            <button onclick="reservarClase('GAP')" data-clase="GAP">GAP</button>
-            <button onclick="reservarClase('Core')" data-clase="Core">Core</button>
-            <button onclick="reservarClase('Bodypump')" data-clase="Bodypump">Body Pump</button>
-            <button onclick="reservarClase('Boxeo')" data-clase="Boxeo">Boxeo</button>
-        </div>
-        <label for="hora">Hora:</label>
-        <input type="time" id="hora" name="hora">
+        <!-- <form action="#" method="get"> -->
+            <h1>Selecciona una clase:</h1>
+            <div class="botones">
+                <button onclick="reservarClase('Yoga')" data-clase="Yoga">Yoga</button>
+                <button onclick="reservarClase('Pilates')" data-clase="Pilates">Pilates</button>
+                <button onclick="reservarClase('Spinning')" data-clase="Spinning">Spinning</button>
+                <button onclick="reservarClase('Zumba')" data-clase="Zumba">Zumba</button>
+                <button onclick="reservarClase('GAP')" data-clase="GAP">GAP</button>
+                <button onclick="reservarClase('Core')" data-clase="Core">Core</button>
+                <button onclick="reservarClase('Bodypump')" data-clase="Bodypump">Body Pump</button>
+                <button onclick="reservarClase('Boxeo')" data-clase="Boxeo">Boxeo</button>
+            </div>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora">
 
-        <label for="dia">Día:</label>
-        <input type="date" id="dia" name="dia">
+            <label for="dia">Día:</label>
+            <input type="date" id="dia" name="dia">
 
-        <input type="hidden" id="clase" name="clase">
-        <input type="submit" value="Reservar Clase">
-        <!--</form>-->
+            <input type="hidden" id="clase" name="clase">
+            <input type="submit" value="Reservar Clase">
+        <!-- </form>>-->
     </div>
     <iframe src="timetable.html" frameborder="0" style="pointer-events: none;"></iframe>
 </div>

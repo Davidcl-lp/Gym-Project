@@ -5,8 +5,8 @@
 }
 
 .mi-form {
-   justify-content: center; /* Centrar horizontalmente */
-   align-items: flex-start; /* Centrar verticalmente */
+   justify-content: center;
+   align-items: flex-start;
    display: flex;
    margin: 4%;
    padding: 2% 2%;
@@ -103,7 +103,7 @@ legend {
 
 .gender-radio {
    display: flex;
-   flex-direction: row; /* Alinea los radio buttons en una fila */
+   flex-direction: row;
 }
 
 .gender-radio input[type="radio"] {
@@ -142,5 +142,5 @@ button {
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-   filter: invert(100%); /* Invierte el color del icono */
+   filter: invert(100%);
 }

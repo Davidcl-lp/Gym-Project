@@ -12,35 +12,38 @@ body {
 }
 
 #inicio {
-    background-image: url('https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?q=80&w=1500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3'); /* Reemplaza 'ruta/a/la/imagen.jpg' con la ruta de tu imagen */
+    background-image: url('../img/inicio.avif');
     background-size: cover;
     background-position: center;
-    color: white; /* Ajusta el color del texto para que se vea claro sobre el fondo de la imagen */
+    color: white;
 }
 
-/* Estilos adicionales para el contenido dentro de la sección de inicio */
 #inicio .container {
-    padding: 15% 0; /* Espaciado alrededor del contenido */
-    text-align: center; /* Centra el contenido */
+    padding: 15% 0;
+    text-align: center;
 }
 
 #inicio h1 {
-    font-size: 3em; /* Tamaño del título */
+    font-size: 3em;
     margin-bottom: 1%;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 #inicio h2 {
-    font-size: 2em; /* Tamaño del subtítulo */
+    font-size: 2em;
     margin-bottom: 3%;
+    color: orange;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 #inicio p {
-    font-size: 1.5em; /* Tamaño del párrafo */
+    font-size: 1.5em;
 }
 
 #inicio .btn {
     font-size: 1.2em;
-    padding: 10px 20px;
+    padding: 20px 60px;
     background-color: #FFC000;
     color: white;
     border: none;
@@ -50,7 +53,7 @@ body {
 }
 
 #inicio .btn:hover {
-    background-color: darkorange; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+    background-color: darkorange;
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
 }
 
@@ -75,11 +78,12 @@ body {
     width: 100%;
     height: 300px;
     border-radius: 16px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
 }
 
 #salud .container2 .info-container {
     width: 100%;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 #salud p {
@@ -113,4 +117,90 @@ body {
     margin-bottom: 2%;
     color: white;
 }
+.slider {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+}
 
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+}
+
+.slider h3 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-size: 5em;
+    z-index: 1;
+    color: white;
+    background: rgba(0,0,0,.75);
+}
+
+#entrenadores .container {
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
+}
+
+#entrenadores .trainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#entrenadores .trainer img {
+    max-width: 50%;
+    order: 2;
+    margin: 2%;
+    border-radius: 16px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+#entrenadores .trainer p {
+    order: 1;
+    margin: 8%;
+    font-size: 150%;
+    display: flex;
+    align-items: flex-start;
+    text-align: justify;
+    color: white;
+}
+#entrenadores h3 {
+    font-size: 3em;
+    color: white;
+    margin-top: 5%;
+    margin-left: 3%;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#entrenadores .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
