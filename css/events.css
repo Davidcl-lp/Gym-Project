@@ -27,8 +27,8 @@ main{
 
 .event__image {
     max-height: 15em;
-    width: 100%; /* Asegura que la imagen se ajuste al contenedor */
-    object-fit: cover; /* Mantiene la relación de aspecto */
+    width: 100%;
+    object-fit: cover; 
 }
 
 .event__title, .event__text {
@@ -36,7 +36,9 @@ main{
 }
 
 .event__title {
-    font-weight: 700; /* Más enfático para títulos */
+    display: inline-block;
+    font-weight: 700;
+    border-bottom: 4px solid #ffd700;
 }
 
 .event__text {

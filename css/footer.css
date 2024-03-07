@@ -3,11 +3,13 @@ footer{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1em;
     width: 100%;
-    margin-top: 2em;
     height: 20em;
-    background-color: rgb(54, 54, 54);
+    background-color: #363636;
     color: white;
-    padding-left: 10em;
+  
+}
+.footerSeccion{
+    margin: 0 auto;
 }
 footer p{
     border-bottom: 1px solid #FFD700;
@@ -15,6 +17,6 @@ footer p{
 }
 ul{
     list-style-type: none;
-    margin: 0; /* Elimina el margen predeterminado */
-    padding: 0; /* Elimina el padding predeterminado */
+    margin: 0;
+    padding: 0;
 }

@@ -3,7 +3,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: linear-gradient(to left top, rgb(212, 194, 3), black);
+    background: #363636;
     font-family: "Inter";
 }
 
