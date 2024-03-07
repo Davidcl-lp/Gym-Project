@@ -1,84 +1,116 @@
-.hero {
-    position: relative;
-    overflow: hidden;
-    color: white;
-    text-align: center;
-    padding: 400px;
-}
-
-.cover-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?q=80&w=1500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3");
-    background-size: cover; /* Mantenemos cover para que la imagen se ajuste al contenedor */
-    background-position: center;
-    z-index: -1; /* Asegura que el contenido esté sobre la imagen de fondo */
-}
-
-.cover-image .container {
-    position: relative;
-    z-index: 1;
-}
-
-.hero h1 {
+*{
     margin: 0;
-}
-
-.hero p {
-    margin: 20px 0;
-}
-
-/* Estilos para el botón */
-.btn {
-    background-color: #CCFE06;
-    color: black;
-    padding: 10px 20px;
+    padding: 0;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #BDF409;
-}
-
-
-/* Estilos para el resto de las secciones */
-.salud, .instalaciones, .entrenadores {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.salud h2, .instalaciones h2, .entrenadores h2 {
-    margin-bottom: 30px;
-}
-
-.gallery {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-}
-
-.gallery img {
-    width: 30%;
-}
-
-.trainer {
-    margin-top: 30px;
-}
-
-.trainer img {
-    width: 200px;
-    border-radius: 50%;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
+}
+
+#inicio {
+    background-image: url('https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?q=80&w=1500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3'); /* Reemplaza 'ruta/a/la/imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Ajusta el color del texto para que se vea claro sobre el fondo de la imagen */
+}
+
+/* Estilos adicionales para el contenido dentro de la sección de inicio */
+#inicio .container {
+    padding: 15% 0; /* Espaciado alrededor del contenido */
+    text-align: center; /* Centra el contenido */
+}
+
+#inicio h1 {
+    font-size: 3em; /* Tamaño del título */
+    margin-bottom: 1%;
+}
+
+#inicio h2 {
+    font-size: 2em; /* Tamaño del subtítulo */
+    margin-bottom: 3%;
+}
+
+#inicio p {
+    font-size: 1.5em; /* Tamaño del párrafo */
+}
+
+#inicio .btn {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #FFC000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+#inicio .btn:hover {
+    background-color: darkorange; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.salud {
+    background-color: #1e1f22;
+}
+
+#salud .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4%;
+    margin: 0 auto;
+}
+
+#salud .container2 {
+    width: 31%;
+    position: relative;
+}
+
+#salud .container2 > img {
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+}
+
+#salud .container2 .info-container {
+    width: 100%;
+    margin-top: 10%;
+}
+
+#salud p {
+    text-align: center;
+    margin-bottom: 2%;
+    color: white;
+}
+
+#salud .container2 .icon {
+    position: absolute;
+    top: 250px;
+    left: calc(50% - 44px);
+    z-index: 1;
+    background-color: #FFC000;
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+}
+
+#salud .container2 .icon img {
+    vertical-align: middle;
+    width: 60%;
+    height: 56px;
+}
+
+#salud h4 {
+    font-size: 1.15rem;
+    text-align: center;
+    margin-bottom: 2%;
+    color: white;
 }
 
