@@ -12,44 +12,48 @@
     <script src="/javascript/paymethods.js"></script>
 </head>
 <body>
-    <main>    
-        <form action="" method="post">    
-            <section class="methods">
+    <main>
+        <div class="mi-form">
+        <form action="" method="post">
+            <div class="form-container">
                 <h1 class="methods_title">Seleccionar método de pago</h1>
-                <p>
+                <div class="form-row">
+                <div class="form-elements">
                     <label class="methods_label" for="método 1">Método de pago 1</label>
-                    <input class="methods_option methods_option--active" type="radio" name="métodos de pago" id="método 1" required>
-                </p>
-                <p>
+                    <input class="methods_option" type="radio" name="métodos de pago" id="método 1" required>
+                </div>
+                <div class="form-elements">
                     <label class="methods_label" for="método 2">Método de pago 2</label>
-                    <input class="methods_option methods_option--active" type="radio" name="métodos de pago" id="método 2">
-                </p>
-                <p>
+                    <input class="methods_option" type="radio" name="métodos de pago" id="método 2">
+                </div>
+                <div class="form-elements">
                     <label class ="methods_label" for="método 3">Método de pago 3</label>
-                    <input class="methods_option methods_option--active" type="radio" name="métodos de pago" id="método 3">
-                </p>
-            
+                    <input class="methods_option" type="radio" name="métodos de pago" id="método 3">
+                </div>
+                </div>
                 <h1 class="methods_title">Rellenar datos</h1>
-                    <p>
-                        <label class ="methods_label" for="campo 1">Campo 1</label>
-                        <input class="methods_input" type="text"  id="campo 1" required>
-                        <label class ="methods_label" for="campo 2">Campo 2</label>
-                        <input class="methods_input" type="text"  id="campo 2" required>
-                    </p>
-                    <p>
-                        <label class ="methods_label" for="campo 3">Campo 3</label>
-                        <input class="methods_input" type="text" id="campo 3" required>
-                    </p>
-                    <p>
-                        <label class ="methods_label" for="campo 4">Campo 4</label>
-                        <input class="methods_input" type="text"  id="campo 4" required>
-                    </p>                
-                    <p>
-                        <button class="methods_button methods_button--active">Guardar</button>
-                    </p>
-                </section>
+                <div class="form-row">
+                    <div class="form-elements">
+                            <label class ="methods_label" for="campo 1">Campo 1</label>
+                            <input class="methods_input" type="text"  id="campo 1" placeholder="Rellene este campo" required>
+                    </div>
+                    <div class="form-elements">
+                            <label class ="methods_label" for="campo 2">Campo 2</label>
+                            <input class="methods_input" type="text"  id="campo 2" placeholder="Rellene este campo" required>
+                    </div>
+                    <div class="form-elements">
+                            <label class ="methods_label" for="campo 3">Campo 3</label>
+                            <input class="methods_input" type="text" id="campo 3" placeholder="Rellene este campo" required>
+                    </div>
+                    <div class="form-elements">
+                            <label class ="methods_label" for="campo 4">Campo 4</label>
+                            <input class="methods_input" type="text"  id="campo 4" placeholder="Rellene este campo" required>
+                    </div>
+                </div>
+            </div>
+            <button class="boton" type="submit">  Siguiente </button>
         </form>
-            
+</div>
     </main>
 </body>
 </html>

@@ -28,6 +28,7 @@ body {
 
 td.hora{
     width: 10%;
+    font-weight: bold;
 }
 
 
@@ -55,14 +56,14 @@ tr:nth-child(even) {
     background-color: #f0f0f0;
 }
 
-a {
+#tabla a {
     color: black;
     font-weight: bold;
     font-size: 20px;
     transition: color 0.3s ease;
 }
 
-a:hover {
+#tabla a:hover {
     color: white;
 }
 

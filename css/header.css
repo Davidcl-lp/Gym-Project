@@ -7,19 +7,19 @@
 }
 
 .nav-bar_option {
-    margin: 1%;
+    margin: 3%;
 }
 
 .nav-bar_logo {
-    padding-left: 4%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 7%;
 }
 
-.nav-bar_option--active:hover {
+#header-nav .nav-bar_option--active:hover {
     transform: scale(1.15);
 }
 
-a {
+#header-nav a {
     text-decoration: none;
     font-weight: bold;
     padding: 0.4em;
@@ -27,14 +27,14 @@ a {
 }
 
 #aside-buttons {
-    margin-left: auto; /* Mueve los botones al extremo derecho */
+    margin-left: auto;
     display: flex;
-    align-items: center; /* Alinea los botones verticalmente */
-    margin-right: 4%;
+    align-items: center;
+    margin-right: 2%;
 }
 
 #login, #register {
-    margin: 0 10px; /* Añade espacio entre los botones */
+    margin: 0 60px;
 }
 
 html {

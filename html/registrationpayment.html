@@ -12,37 +12,43 @@
 </head>
 <body>    
     <main>
+        <div class="mi-form">
         <form action="" method="post">
-            <section class="paymentcard">
+            <div class="form-container">
                 <h1 class="paymentcard_title">Elige con que opción pagar</h1>
-                <div class="paymentcard_option">
-                    <label  for="opción 1">Usar método de pago seleccionado</label>
-                    <input type="radio" name="opciones de pago" id="opción 1" required>
+                <div class="form-row">
+                    <div class="paymentcard_option">
+                        <label  for="opción 1">Usar método de pago seleccionado</label>
+                        <input type="radio" name="opciones de pago" id="opción 1" required>
+                    </div>
+                    <div class="paymentcard_option">
+                        <label for="opción 2">Elegir nuevo método de pago</label>
+                        <input type="radio" name="opciones de pago" id="opción 2" required>
+                    </div>
                 </div>
 
-                <div class="paymentcard_option">
-                    <label for="opción 1">Elegir nuevo método de pago</label>
-                    <input type="radio" name="opciones de pago" id="opción 1" required>
-                    <p>
+                <div class="form-row">
+                    <div class="paymentcard_option">
                         <label class="paymentcard_label" for="campo 1">Campo 1</label>
-                        <input class= "paymentcard_input" type="text"  id="campo 1" required>
+                        <input class= "paymentcard_input" type="text"  id="campo 1" placeholder="Rellene este campo" required>
+                    </div>
+                    <div class="paymentcard_option">
                         <label class="paymentcard_label" for="campo 2">Campo 2</label>
-                        <input class= "paymentcard_input" type="text"  id="campo 2" required>
-                    </p>
-                    <p>
+                        <input class= "paymentcard_input" type="text"  id="campo 2" placeholder="Rellene este campo" required>
+                    </div>
+                    <div class="paymentcard_option">
                         <label class="paymentcard_label" for="campo 3">Campo 3</label>
-                        <input class= "paymentcard_input" type="text" id="campo 3" required>
-                    </p>
-                    <p>
+                        <input class= "paymentcard_input" type="text" id="campo 3"  placeholder="Rellene este campo" required>
+                    </div>
+                    <div class="paymentcard_option">
                         <label class="paymentcard_label" for="campo 4">Campo 4</label>
-                        <input class= "paymentcard_input" type="text"  id="campo 4" required>
-                    </p>
+                        <input class= "paymentcard_input" type="text"  id="campo 4" placeholder="Rellene este campo" required>
+                    </div>
                 </div>
-                <p>
                     <button class="paymentcard_btn paymentcard_btn--active" >Guardar</button>
-                </p>
-            </section>
+            </div>
         </form>
+        </div>
     </main>
 
 </body>
