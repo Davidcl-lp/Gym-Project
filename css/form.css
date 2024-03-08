@@ -5,15 +5,10 @@
 }
 
 .mi-form {
-   justify-content: center;
-   align-items: flex-start;
-   display: flex;
    margin: 4%;
    padding: 2% 2%;
-   padding-right: 4%;
-   border: 1px solid #1e1f22;
+   padding-right: 3%;
    border-radius: 16px;
-   flex-direction: column;
    background: #1e1f22;
    box-shadow: 0 15px 25px rgba(0,0,0,.6);
 }
@@ -26,16 +21,6 @@
 
 .form-row .form-elements {
    width: calc(50% - 1%);
-}
-
-h1 {
-   text-align: center;
-   line-height: 56px;
-   color: black;
-   font-size: 40px;
-   font-family: 'Poppins', sans-serif;
-   font-weight: bold;
-   margin-top: 12%;
 }
 
 h2 {
@@ -56,7 +41,7 @@ body {
    align-items: center;
    flex-direction: column;
    background: #f0f0f0;
-   font-family: 'Poppins', sans-serif;
+   font-family: 'Inter', sans-serif;
 }
 
 legend {
@@ -76,7 +61,7 @@ legend {
    color: white;
    margin-bottom: 30px;
    border: none;
-   border-bottom: 0.2em solid white;
+   border-bottom: 0.2em solid darkorange;
    outline: none;
    background: transparent;
 }
@@ -121,6 +106,7 @@ legend {
 button {
    text-align: center;
    border-radius: 5px;
+   font-size: 1.3em;
    font-weight: bold;
    text-transform: uppercase;
    transition: all 0.3s ease 0s;
@@ -131,16 +117,106 @@ button {
    margin-left: 41%;
    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
    border: none;
-   background: #FFC000;
+   background: darkorange;
    color: #f0f0f0;
 }
 
 .boton:hover {
-   background: darkorange;
+   background: orangered;
    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
 
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
    filter: invert(100%);
+}
+
+.progress--large {
+   font-size: 2em;
+}
+
+/**
+ * Some Generic Stylings
+ */
+*, *:after, *:before {
+   box-sizing: border-box;
+}
+h1 {
+   margin-bottom: 1.5em;
+}
+.progress {
+   margin-bottom: 3em;
+}
+a {
+   color: orangered;
+   text-decoration: none;
+
+   &:hover {
+      text-decoration: underline;
+   }
+}
+
+.progress {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: table;
+   table-layout: fixed;
+   width: 100%;
+   color: #1e1f22;
+   margin-top: 2%;
+
+   > li {
+      position: relative;
+      display: table-cell;
+      text-align: center;
+      font-size: 0.8em;
+
+      &:before {
+         content: attr(data-step);
+         display: block;
+         margin: 0 auto;
+         background: darkgrey;
+         width: 3em;
+         height: 3em;
+         text-align: center; //IE8 doesn't inherit this style
+      margin-bottom: 0.25em;
+         line-height: 3em;
+         border-radius: 100%;
+         position: relative;
+         z-index: 1000;
+      }
+      &:after {
+         content: '';
+         position: absolute;
+         display: block;
+         background: darkgrey;
+         width: 100%;
+         height: 0.5em;
+         top: 1.25em;
+         left: 50%;
+         margin-left: 1.5em\9;
+         z-index: -1;
+      }
+      &:last-child:after {
+         display: none;
+      }
+      &.is-complete {
+         color: darkorange;
+
+         &:before,
+         &:after {
+            color: #FFF;
+            background: darkorange;
+         }
+      }
+      &.is-active {
+         color: orangered;
+
+         &:before {
+            color: #FFF;
+            background: orangered;
+         }
+      }
+   }
 }

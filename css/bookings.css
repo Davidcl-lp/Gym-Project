@@ -1,5 +1,5 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
@@ -41,7 +41,7 @@ label {
     color: white;
     margin-bottom: 30px;
     border: none;
-    border-bottom: 0.2em solid white;
+    border-bottom: 0.2em solid darkorange;
     outline: none;
     background: transparent;
 }
@@ -56,12 +56,12 @@ input[type="submit"] {
     line-height: 36px;
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
     border: none;
-    background: #FFC000;
+    background: darkorange;
     color: #f0f0f0;
 }
 
 input[type="submit"]:hover {
-    background: darkorange;
+    background: orangered;
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
 }
 
@@ -82,7 +82,7 @@ button {
     line-height: 36px;
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
     border: none;
-    background: #FFC000;
+    background: darkorange;
     color: #f0f0f0;
 }
 

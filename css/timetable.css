@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
@@ -64,42 +64,42 @@ a:hover {
 
 
 .Yoga {
-    background-color: blueviolet;
+    background-color: #d400ff;
     color: #fff;
 }
 
 .Boxeo {
-    background-color: #97d99eff;
+    background-color: #00ffe1;
     color: #fff;
 }
 
 .Spinning {
-    background-color: #57bf33ff;
+    background-color: #00ff2e;
     color: #fff;
 }
 
 .Bodypump {
-    background-color: #f36b35ff;
+    background-color: #ff8800;
     color: #fff;
 }
 
 .GAP {
-    background-color: hotpink;
+    background-color: #ff008c;
     color: #fff;
 }
 
 .Core {
-    background-color: #f03a4fff;
+    background-color: #ff1900;
     color: #fff;
 }
 
 .Pilates {
-    background-color: #78d1deff;
+    background-color: #057dff;
     color: #fff;
 }
 
 .Zumba {
-    background-color: #f8a628ff;
+    background-color: #fffa00;
     color: #fff;
 }
 

@@ -82,7 +82,7 @@ li {
 }
 
 p {
-    color: #FFC000;
+    color: darkorange;
     font-weight: bold;
     padding-top: 2%;
     margin-bottom: -14%;
@@ -103,7 +103,7 @@ p {
 
 .b1 {
     border: none;
-    background: #FFC000;
+    background: darkorange;
     color: #f0f0f0;
 }
 
@@ -114,7 +114,7 @@ p {
 }
 
 .b1:hover {
-    background: darkorange;
+    background: orangered;
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
 
 }
@@ -146,7 +146,7 @@ p {
     color: white;
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
-    background: radial-gradient(circle at left top, #181504 0.00%, #FFC000 53.0%,#ffd500, #fbdc30, #ffe761);
+    background: radial-gradient(circle at left top, #181504 0.00%, darkorange 53.0%, orangered);
     position: relative;
 }
 
@@ -160,7 +160,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #f0f0f0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 h1 {
