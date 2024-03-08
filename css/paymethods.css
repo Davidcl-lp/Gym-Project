@@ -14,10 +14,13 @@ body{
 
 
 .methods{
-    background: rgb(159, 157, 157);
+    background: #1e1f22;
+    margin-top: 10%;
     width: 40vw;
-    height: 55vh;
+    height: 65vh;
     border-radius: 5%;
+    border: 1px solid #1e1f22;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
 }
 
 
@@ -25,23 +28,40 @@ body{
 .methods_title{
     font-family:"Inter",Arial, Helvetica, sans-serif,serif;
     font-weight: bold;
-    margin-top: 10%;
+    margin-top: 7%;
     margin-left: 20%;
+    color:white; 
 }
 
 
 .methods_label{
+    color: white;
     margin-left: 5%;
 }
 
+.methods_input{
+    color: white;
+    border: none;
+    border-bottom: 0.2em solid white;
+    outline:none; 
+    background: transparent;
+}
+
 .methods_button{
-    width: 15%;
-    border-radius: 15%;
-    margin-left: 75%;
+    width: 25%;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 40%;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    border: none;
+    background: #FFC000;
+    color: #f0f0f0;
+
 }
 
 .methods_button--active:hover{
-    transition: background-color 0.9s ease;
-    background-color: rgb(107, 107, 106);
+    background: darkorange;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
 }
 
