@@ -1,4 +1,9 @@
-*{
+html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -156,11 +161,10 @@ p {
 }
 
 body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f0f0f0;
-    font-family: 'Inter', sans-serif;
 }
 
 h1 {
