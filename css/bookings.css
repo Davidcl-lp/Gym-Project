@@ -5,6 +5,10 @@ body {
     background-color: #f0f0f0;
 }
 
+html{
+    font-family: "Inter",serif;
+}
+
 .contenedor {
     display: flex;
     justify-content: center;

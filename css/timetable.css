@@ -4,6 +4,10 @@
     text-decoration: none;
 }
 
+html{
+    font-family: "Inter",serif;
+}
+
 body {
     font-family: "Inter", sans-serif;
     margin: 0;
