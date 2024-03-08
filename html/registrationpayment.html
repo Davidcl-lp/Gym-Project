@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago de inscripción</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/registrationpayment.css">
+    <script src="/javascript/registrationpayment.js"></script>
+</head>
+<body>    
+    <main>
+        <form action="" method="post">
+            <section class="paymentcard">
+                <h1 class="paymentcard_title">Elige con que opción pagar</h1>
+                <div class="paymentcard_option">
+                    <label  for="opción 1">Usar método de pago seleccionado</label>
+                    <input type="radio" name="opciones de pago" id="opción 1" required>
+                </div>
+
+                <div class="paymentcard_option">
+                    <label for="opción 1">Elegir nuevo método de pago</label>
+                    <input type="radio" name="opciones de pago" id="opción 1" required>
+                    <p>
+                        <label class="paymentcard_label" for="campo 1">Campo 1</label>
+                        <input class= "paymentcard_input" type="text"  id="campo 1" required>
+                        <label class="paymentcard_label" for="campo 2">Campo 2</label>
+                        <input class= "paymentcard_input" type="text"  id="campo 2" required>
+                    </p>
+                    <p>
+                        <label class="paymentcard_label" for="campo 3">Campo 3</label>
+                        <input class= "paymentcard_input" type="text" id="campo 3" required>
+                    </p>
+                    <p>
+                        <label class="paymentcard_label" for="campo 4">Campo 4</label>
+                        <input class= "paymentcard_input" type="text"  id="campo 4" required>
+                    </p>
+                </div>
+                <p>
+                    <button class="paymentcard_btn paymentcard_btn--active" >Guardar</button>
+                </p>
+            </section>
+        </form>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+html{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter",serif;
+    min-height: 100vh;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: "Inter";
+    flex-wrap: wrap;
+    margin: 0;
+}
+main{
+    display: flex;
+    width: 70%;
+    height: 100%;
+}
+.aside-card{
+    background: rgb(159, 157, 157);
+    width:10vw;
+    
+}
+.reservations{
+    flex: 1;
+    margin: 20px;
+}
+
+.burgerbotton{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    cursor: pointer;
+    border: 2px solid #333;
+    padding: 3px;
+}
+
+
+.burgerbotton_line{
+    width: 20px;
+    height: 3px;
+    background-color: #333;
+    margin: 2px 0;
+}
+
+
+.aside-card a{
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.aside-card_option--active:hover{
+ transform: scale(1.05);
+}
+
+.reservations_info{
+    height: 100px;
+    border: solid 2px #000;
+    width: 500px;
+}
