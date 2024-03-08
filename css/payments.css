@@ -1,0 +1,32 @@
+html, body{
+    font-family: "Inter";
+    height: 100%;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+main{
+    width: 80%;
+    flex: 1;
+    margin-left: 5em;
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.formPart{
+    margin-left: 3em;
+    margin-right: 10em;
+}
+form li{
+    border: 1px solid black;
+    margin-top: 1em;
+    text-align: center;
+}

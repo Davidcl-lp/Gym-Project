@@ -3,7 +3,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: #363636;
+    background: #1e1f22;
     font-family: "Inter";
 }
 
@@ -55,13 +55,18 @@ body {
     font-size: 1em;
     font-weight: 600;
 }
+
 .form-container__button:hover{
-    pointer-events: painted;
+    cursor: pointer;
+    background-color: darkorange;
+    color: black;
+    transition: background-color 0.3s linear;
 }
 
+
 .form-container__logo {
-    height: 2em;
-    width: 2em;
+    height: 3em;
+    width:3em;
     margin: 0;
 }
 
@@ -76,6 +81,10 @@ body {
     text-decoration: none;
     border-bottom: 2px solid black;
     color: black;
+    transition: border-bottom 0.3s linear;
+}
+.form-container__register-link:hover{
+    border-bottom: 2px solid darkorange;
 }
 .form-container__write-box:focus {
     outline: none; 
