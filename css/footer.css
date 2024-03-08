@@ -12,8 +12,19 @@ footer{
     margin: 0 auto;
 }
 footer p{
-    border-bottom: 1px solid #FFD700;
+    border-bottom: 1px solid darkorange;
     display: inline-block;
+}
+footer li{
+    display: inline-block;
+    padding: 0.2em;
+    margin-top: 0.2em;
+    border-radius: 3px;
+}
+footer li:hover {
+    background-color: darkorange;
+    color: white;
+    cursor: pointer;
 }
 ul{
     list-style-type: none;
