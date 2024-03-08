@@ -1,0 +1,38 @@
+html{
+    font-family: "Inter",serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter";
+    margin: 0
+}
+
+.grid{
+    display: flex;   
+    flex-wrap: wrap;
+}
+
+
+.service_image{
+    background-color: whitesmoke;
+    width: 200px;
+    border: 2px solid #000;
+    border-radius: 3%;
+    margin: 10px;
+    margin-top: 25% ;
+}
+
+.service_image--active:hover{
+    transform: rotateY(180deg);
+    transition: transform 1s ease;
+}
+.service_image img{
+    
+    width: 100%;
+    height: 200px;
+}
