@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #1e1f22;
+    font-family: "Inter";
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 1em;
+    height: 30em;
+    width: 35em;
+}
+
+.form-container__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    font-size: 2em;
+    margin-top: 1em;
+    font-weight: 700;
+}
+
+.form-container__label {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    margin-left: 4.4em;
+    font-weight: 700;
+}
+
+.form-container__write-box {
+    display: block;
+    margin: auto;
+    margin-top: 2em;
+    border: 0px;
+    border-bottom: 3px solid black;
+    width: 30em;
+    padding-bottom: 0.3em;
+}
+
+.form-container__button {
+    display: block;
+    margin: auto;
+    margin-top: 2.2em;
+    width: 20em;
+    height: 2.5em;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 1em;
+    font-size: 1em;
+    font-weight: 600;
+}
+.form-container__button:hover{
+    cursor: pointer;
+    background-color: darkorange;
+}
+
+.form-container__logo {
+    height: 2em;
+    width: 2em;
+    margin: 0;
+}
+
+.form-container__register {
+    display: block;
+    margin-top: 0.5em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-container__register-link {
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    color: black;
+}
+.form-container__write-box:focus {
+    outline: none; 
+}

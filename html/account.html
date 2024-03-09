@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <script src="../javascript/account.js"></script>
+    <link rel="stylesheet" href="../css/account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <form action="/editAccount" class="account">
+            <h1 class="account__title">Mi cuenta</h1>
+            <label for="userNameInput" class="account__label">Nombre de usuario:</label>
+            <input type="text" id="userNameInput" class="account__input" value="pepe"> <br>
+            <label for="userPasswordInput" class="account__label">Contraseña:</label>
+            <input type="password" id="userPasswordInput" class="account__input" value="pepe"> <br>
+            <label for="userPhoneInput" class="account__label">Número de telefono:</label>
+            <input type="number" id="userPhoneInput" class="account__input" value="656565654"> <br>
+            <button class="account__button" id="editButton">Editar</button>
+            <button class="account__button account__button--confirm" id="confirmButton">Confirmar cambios</button>
+        </form>
+    </main>
+</body>
+</html>

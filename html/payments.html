@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/payments.css">
+    <script src="/javascript/payments.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main class="payments">
+        <h1 class="payments__title">Pagos</h1>
+        <form action="/payments" class="payments__form">
+            <div class="payments__form-section">
+                <p class="payments__section-title">PAGOS REALIZADOS</p>
+                <ul class="payments__list">
+                    <li class="payments__list-item">Pago realizado</li>
+                    <li class="payments__list-item">Pago realizado</li>
+                    <li class="payments__list-item">Pago realizado</li>
+                    <li class="payments__list-item">Pago realizado</li>
+                    <li class="payments__list-item">Pago realizado</li>
+                </ul>
+            </div>
+            <div class="payments__form-section payments__form-section--with-button">
+                <p class="payments__section-title">PAGOS PENDIENTES</p>
+                <ul class="payments__list">
+                    <li class="payments__list-item">Pago pendiente <button class="payments__pay-button">Pagar</button></li>
+                </ul>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

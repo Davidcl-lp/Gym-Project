@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="/javascript/login.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="form-container">
+        <form action="/logIn" method="post">
+            <div class="form-container__title">
+                Log in
+                <img src="/img/avispa1.png-removebg-preview-2.png" alt="logo" class="form-container__logo">
+            </div>
+            <label for="email" class="form-container__label">Dirección de email</label>
+            <input type="email" class="form-container__write-box" name="email" required>
+            <label for="password" class="form-container__label">Crear contraseña</label>
+            <input type="password" class="form-container__write-box" name="password" required>
+            <input type="submit" value="Iniciar sesión" class="form-container__button">
+            <div class="form-container__register">
+                ¿No estás inscrito? 
+                <a href="/signup" class="form-container__register-link">Inscríbete ahora</a>
+            </div>
+        </form>
+    </main>   
+</body>
+</html>
