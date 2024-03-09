@@ -1,9 +1,10 @@
-html, body{
+html, body {
     font-family: "Inter";
     height: 100%;
     margin: 0;
 }
-body{
+
+body {
     width: 100%;
     height: 100%;
     display: flex;
@@ -11,52 +12,43 @@ body{
     align-items: center;
 }
 
-main{
+main {
     width: 80%;
-    flex: 1
+    flex: 1;
 }
-form{
+
+.account {
     width: 100%;
 }
-.accountLabel, .accountInput{
+
+.account__label, .account__input {
     margin-top: 2em;
     font-weight: bold;
 }
-.accountInput{
+
+.account__input {
     border: 0px;
     width: 7em;
 }
-#accountTitle{
+
+.account__title {
     font-weight: bold;
 }
-.buttons{
+
+.account__button {
     margin-top: 5em;
     font-weight: bold;
     padding: 1em;
     background-color: white;
     border: 1px solid black;
 }
-.buttons:hover{
+
+.account__button:hover {
     background-color: black;
-    color:white;
-    cursor:pointer;
-}
-#editButton{
-    margin-right: 2em;
-}
-ul{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-li{
-    display: inline-block;
-}
-li:hover{
-    background-color: #FFD700;
-    color: black;
-    border-radius: 1px;
-    padding: 1px;
+    color: white;
     cursor: pointer;
 }
 
+.account__button--confirm {
+    margin-left: 2em;
+}

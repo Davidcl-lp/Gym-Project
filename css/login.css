@@ -3,7 +3,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: #363636;
+    background: #1e1f22;
     font-family: "Inter";
 }
 
@@ -56,7 +56,8 @@ body {
     font-weight: 600;
 }
 .form-container__button:hover{
-    pointer-events: painted;
+    cursor: pointer;
+    background-color: darkorange;
 }
 
 .form-container__logo {

@@ -12,16 +12,16 @@
 </head>
 <body>
     <main>
-        <form action="/editAccount" >
-            <h1 id="accountTitle">Mi cuenta</h1>
-            <label for="userNameInput" class="accountLabel">Nombre de usuario:</label>
-            <input type="text" id="userNameInput" class="accountInput" value="pepe"> <br>
-            <label for="userPasswordInput" class="accountLabel">Contraseña:</label>
-            <input type="password" id="userPasswordInput" class="accountInput" value="pepe"> <br>
-            <label for="userPhoneInput" class="accountLabel">Número de telefono:</label>
-            <input type="number" id="userPhoneInput"  class="accountInput" value="656565654"> <br>
-            <button class="buttons" id="editButton">Editar</button>
-            <button class="buttons" id="confirmButton">Confirmar cambios</button>
+        <form action="/editAccount" class="account">
+            <h1 class="account__title">Mi cuenta</h1>
+            <label for="userNameInput" class="account__label">Nombre de usuario:</label>
+            <input type="text" id="userNameInput" class="account__input" value="pepe"> <br>
+            <label for="userPasswordInput" class="account__label">Contraseña:</label>
+            <input type="password" id="userPasswordInput" class="account__input" value="pepe"> <br>
+            <label for="userPhoneInput" class="account__label">Número de telefono:</label>
+            <input type="number" id="userPhoneInput" class="account__input" value="656565654"> <br>
+            <button class="account__button" id="editButton">Editar</button>
+            <button class="account__button account__button--confirm" id="confirmButton">Confirmar cambios</button>
         </form>
     </main>
 </body>

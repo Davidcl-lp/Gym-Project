@@ -1,0 +1,58 @@
+html, body {
+    font-family: "Inter";
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.payments {
+    width: 80%;
+    flex: 1;
+    margin-left: 5em;
+}
+
+.payments__form {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.payments__form-section {
+    margin-left: 3em;
+    margin-right: 10em;
+}
+
+.payments__form-section--with-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.payments__section-title{
+    font-weight: bold;
+}
+.payments__list-item {
+    border: 1px solid black;
+    margin-top: 1em;
+    text-align: center;
+    padding: 0.4em
+}
+
+.payments__pay-button {
+    margin-left: 1em; 
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    padding: 0.4em;
+}
+.payments__pay-button:hover{
+    cursor: pointer;
+    background-color: darkorange;
+}

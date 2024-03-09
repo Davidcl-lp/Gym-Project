@@ -38,7 +38,7 @@ main{
 .event__title {
     display: inline-block;
     font-weight: 700;
-    border-bottom: 4px solid #ffd700;
+    border-bottom: 4px solid darkorange;
 }
 
 .event__text {
