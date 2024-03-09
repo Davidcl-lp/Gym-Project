@@ -53,6 +53,6 @@ body {
     padding: 0.4em;
 }
 .payments__pay-button:hover{
-    cursor: pointer;
+        cursor: pointer;
     background-color: darkorange;
 }
