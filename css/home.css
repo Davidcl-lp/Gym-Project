@@ -42,6 +42,7 @@ body {
 }
 
 #inicio .btn {
+    font-weight: bold;
     font-size: 1.2em;
     padding: 20px 60px;
     background-color: darkorange;

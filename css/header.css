@@ -19,6 +19,21 @@
     transform: scale(1.15);
 }
 
+#aside-buttons .boton {
+    padding: 10px 10px;
+    background-color: darkorange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+#aside-buttons .boton:hover {
+    background-color: orangered;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
 #header-nav a {
     text-decoration: none;
     font-weight: bold;
