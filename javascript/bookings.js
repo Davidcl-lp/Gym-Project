@@ -25,21 +25,21 @@ window.onload = function() {
     var urlParams = new URLSearchParams(window.location.search);
     var clase = urlParams.get('clase');
     if (clase) {
-        // Seleccionar automáticamente el botón correspondiente
+
         var botonClase = document.querySelector('button[data-clase="' + clase + '"]');
         if (botonClase) {
-            reservarClase(clase); // Llamar a la función para resaltar el botón
+            reservarClase(clase);
         }
     }
 }
 
 function reservarClase(clase) {
-    // Restablecer el color de fondo de todos los botones
+
     var botones = document.querySelectorAll('button');
     botones.forEach(function(boton) {
         boton.style.backgroundColor = '#ff8c00';
     });
-    // Cambiar el color de fondo del botón seleccionado
+
     var botonSeleccionado = document.querySelector('button[data-clase="' + clase + '"]');
     if (botonSeleccionado) {
         botonSeleccionado.style.backgroundColor = '#ff4500';
@@ -47,3 +47,28 @@ function reservarClase(clase) {
     document.getElementById('clase').value = clase;
 }
 
+window.onload = function() {
+    var iframe = document.getElementById("timetableFrame");
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "timetable.html", true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            var response = xhr.responseText;
+
+            var startIndex = response.indexOf("<body>");
+            var endIndex = response.indexOf("</body>");
+            var contentWithoutHeader = response.substring(startIndex, endIndex);
+            iframe.contentWindow.document.open();
+
+            iframe.contentWindow.document.write(contentWithoutHeader);
+
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = '../css/timetable.css';
+            iframe.contentWindow.document.head.appendChild(link);
+            iframe.contentWindow.document.close();
+        }
+    };
+    xhr.send();
+};

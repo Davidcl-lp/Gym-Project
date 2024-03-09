@@ -1,31 +1,32 @@
-
 html{
     margin: 0;
     padding: 0;
     font-family: "Inter",serif;
-    min-height: 100vh;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
+* {
     margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
+
+body {
+    background: #f0f0f0;
+}
+
 main{
     display: flex;
     width: 70%;
-    height: 100%;
 }
 .aside-card{
     background: rgb(159, 157, 157);
     width:10vw;
-    
+    height: 100vh;
+
 }
 .reservations{
     flex: 1;
-    margin: 20px;
+    margin: 6%;
 }
 
 .burgerbotton{
@@ -50,10 +51,17 @@ main{
     display: flex;
     flex-wrap: wrap;
     color: black;
+    font-weight: bold;
+    margin-left: 14%;
+    margin-top: 14%;
 }
 
 .aside-card_option--active:hover{
- transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+h1 {
+    margin-bottom: 3%;
 }
 
 .reservations_info{

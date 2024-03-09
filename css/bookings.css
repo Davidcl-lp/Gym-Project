@@ -1,8 +1,13 @@
 body {
-    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 html{
@@ -13,6 +18,14 @@ html{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 7%;
+    margin-bottom: 5%;
 }
 
 .form {
