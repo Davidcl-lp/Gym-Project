@@ -82,12 +82,12 @@ html {
     padding: 6%;
 }
 
-li {
+.listItem {
     padding: 3%;
     margin: 2%;
 }
 
-p {
+.parraf {
     color: darkorange;
     font-weight: bold;
     padding-top: 2%;

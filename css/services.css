@@ -10,26 +10,24 @@ html{
 
 .form-row {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
 }
 
 .form-row .service {
     width: calc(25% - 20px); /* Ajusta el ancho para que haya espacio para 4 imágenes por fila */
-    margin: 10px; /* Ajusta el margen entre las imágenes */
 }
 
 .grid{
-    display: flex;   
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 4%;
+    display: grid;   
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 
 .service_image{
     width: 369px;
-    margin: 10px;
+    margin: 2em;
     margin-top: 25%;
 }
 

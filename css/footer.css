@@ -4,9 +4,10 @@ footer{
     gap: 1em;
     width: 100%;
     height: 20em;
-    background-color: #363636;
+    background-color: #1e1f22;
     color: white;
-  
+    border-top: 3px solid white;
+    padding-top: 2em;
 }
 .footerSeccion{
     margin: 0 auto;
@@ -14,6 +15,7 @@ footer{
 footer p{
     border-bottom: 1px solid darkorange;
     display: inline-block;
+    font-weight: bold;
 }
 footer li{
     display: inline-block;

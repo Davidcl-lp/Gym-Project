@@ -7,9 +7,7 @@ document.addEventListener("DOMContentLoaded",function(){
         .catch(error => {
             console.error('Error al cargar el header: ', error)
         });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
     fetch('footer.html')
         .then(response => response.text())
         .then(html => {
@@ -20,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 });
 
+
 window.onload = function() {
-    // Obtener el parámetro "clase" de la URL
     var urlParams = new URLSearchParams(window.location.search);
     var clase = urlParams.get('clase');
     if (clase) {

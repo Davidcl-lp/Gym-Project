@@ -1,3 +1,6 @@
+html{
+    font-family: 'Inter', sans-serif;
+}
 body {
     width: 100%;
     display: flex;
@@ -8,6 +11,8 @@ body {
     margin: 0;
 }
 main{
+    margin-top: 5em;
+    margin-bottom: 5em;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -29,6 +34,7 @@ main{
     max-height: 15em;
     width: 100%;
     object-fit: cover; 
+    border-radius: 5px;
 }
 
 .event__title, .event__text {

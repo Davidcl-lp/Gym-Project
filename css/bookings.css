@@ -18,6 +18,8 @@ html{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 5em;
+    margin-top: 2em;
 }
 
 h1 {

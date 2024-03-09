@@ -1,0 +1,12 @@
+aside{
+    background-color: #1e1f22;
+    padding: 2em;
+}
+a {
+    color: white;
+    text-decoration: none;
+    cursor: auto;
+}
+.aside-card_option{
+    margin-bottom: 2em;
+}

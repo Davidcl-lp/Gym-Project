@@ -1,7 +1,13 @@
 html{
-    font-family: "Inter",serif;
+    font-family: "Inter", serif;
 }
+main{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
 
+}
 body{
     display: flex;
     align-items: center;
