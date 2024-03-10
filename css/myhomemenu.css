@@ -7,6 +7,9 @@ a {
     text-decoration: none;
     cursor: auto;
 }
+a:hover{
+    cursor: pointer;
+}
 .aside-card_option{
     margin-bottom: 2em;
 }

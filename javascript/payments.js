@@ -23,6 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
       document.querySelector('main').insertAdjacentHTML('afterbegin', html);
     })
     .catch(error => {
-      console.error('Error al cargar el footer:', error);
+      console.error('Error al cargar el menu del home:', error);
     });
   });

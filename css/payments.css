@@ -23,7 +23,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: start;
-    margin-top: 3em;
+    margin-top: 2em;
     margin-bottom: 3em;
 }
 .main__element{
@@ -34,7 +34,7 @@ main {
     margin-right: 10em;
 }
 .payments__title{
-    margin-bottom: 2em;
+    margin-top:1em;
 }
 
 .payments__form-section--with-button {
@@ -61,6 +61,6 @@ main {
     padding: 0.4em;
 }
 .payments__pay-button:hover{
-        cursor: pointer;
+    cursor: pointer;
     background-color: darkorange;
 }

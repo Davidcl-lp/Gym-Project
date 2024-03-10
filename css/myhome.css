@@ -29,16 +29,6 @@ main{
     margin: 6%;
 }
 
-.burgerbotton{
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    cursor: pointer;
-    border: 2px solid #333;
-    padding: 3px;
-}
-
-
 .burgerbotton_line{
     width: 20px;
     height: 3px;

@@ -15,4 +15,12 @@ document.addEventListener("DOMContentLoaded",function(){
     .catch(error => {
         console.error('Error al cargar el footer:', error);
     });
+    fetch('myhomemenu.html')
+    .then(response => response.text())
+    .then(html => {
+      document.querySelector('main').insertAdjacentHTML('afterbegin', html);
+    })
+    .catch(error => {
+      console.error('Error al cargar el menu del home:', error);
+    });
 });
