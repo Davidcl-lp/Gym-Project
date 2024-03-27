@@ -1,15 +1,61 @@
 aside{
     background-color: #1e1f22;
-    padding: 2em;
+    padding: 1.5em;
+    min-width: 10em;
 }
 a {
     color: white;
     text-decoration: none;
     cursor: auto;
+    padding: 0.2em;
 }
 a:hover{
     cursor: pointer;
+    background-color: white;
+    border-radius: 1px;
+    color:#1e1f22;
 }
 .aside-card_option{
     margin-bottom: 2em;
 }
+.aside-card_option__button{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-left: 1em;
+}
+.aside-card_option__button button{
+    background-color: transparent;
+    border: 0em;
+}
+.aside-card_option__button button:hover{
+    cursor: pointer;;
+}
+#dropdown{
+    height: 2em;
+    width: 2em;
+}
+.main__element{
+    position: relative;
+    transition: left 1s ease;
+    left: 0;
+}
+
+.main__element.hidden{
+    position: relative;
+    left: -10.2em;
+    transition: left 1s ease;
+}
+.main__element.responsive{
+    left: 0em;
+    position: absolute;
+    z-index: 1;
+}
+.main__element.hidden-responsive{
+    position: absolute;
+    z-index: 1;
+    left: -10.2em;
+}
+
+
+

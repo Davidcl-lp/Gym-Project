@@ -3,8 +3,10 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    width: 100vw;
     background: #1e1f22;
     font-family: "Inter";
+    margin: 0;
 }
 
 .form-container {
@@ -34,7 +36,8 @@ body {
 
 .form-container__write-box {
     display: block;
-    margin: auto;
+    margin-left: 15%;
+    /* margin: auto; */
     margin-top: 2em;
     border: 0px;
     border-bottom: 3px solid black;
@@ -81,4 +84,30 @@ body {
 }
 .form-container__write-box:focus {
     outline: none; 
+}
+
+@media screen and (max-width: 600px) {
+    .form-container{
+        width: 20em;
+        height: 19em;
+    }
+    .form-container__title{
+        font-size: 1em;
+    }
+    .form-container__label{
+        font-size: 0.7em;
+    }
+    .form-container__write-box{
+        width: 17em;
+        margin-top: 0em;
+        margin-left: 15%;
+    }
+    .form-container__button{
+        width: 12em;
+        font-size: 0.8em;
+    }
+    .form-container__register{
+        font-size: 0.8em;
+    }
+
 }
